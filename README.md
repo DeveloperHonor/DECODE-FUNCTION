@@ -21,7 +21,7 @@ cp decode.so $PGDATA/../lib/
 # Step 4 #
 **Download decode.sql file**
 
-put the decode.sql file in /home/postgres directory or other directory
+Putting the decode.sql file in /home/postgres directory or other directory
 
 Next,as following:
 psql -U postgres -d postgres -f decode.sql
