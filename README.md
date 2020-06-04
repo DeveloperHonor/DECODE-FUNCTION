@@ -5,12 +5,14 @@ In PostgreSQL,achieving similar to decode function of Oracle
 **Download decode.c file**
 
 # Step 2 #
-**Putting the decode.c to $PGDATA/../lib or src/include directory**
+**Putting the decode.c to $PGDATA/../include/postgresql/server or src/include directory**
 
 # Step 3#
 Executing following command when you completed step 2
 
-gcc -fpic -c decode.c -I .
+cd $PGDATA/../include/postgresql/server/
+
+gcc -fpic -c decode.c -I .   #don't forget the point
 
 gcc -shared -o decode.so decode.o
 
