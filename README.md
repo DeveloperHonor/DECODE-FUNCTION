@@ -9,8 +9,11 @@ In PostgreSQL,achieving similar to decode function of Oracle
 
 # Step 3#
 Executing following command when you completed step 2
+
 gcc -fpic -c decode.c -I .
+
 gcc -shared -o decode.so decode.o
+
 cp decode.so $PGDATA/../lib/
 
 # Step 4#
@@ -28,4 +31,7 @@ psql -U postgres -d postgres -f decode.sql
     ------------
      PostgreSQL
     (1 row)
+
+
+
 
