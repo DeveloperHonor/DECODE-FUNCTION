@@ -7,7 +7,7 @@ In PostgreSQL,achieving similar to decode function of Oracle
 # Step 2 #
 **Putting the decode.c to $PGDATA/../include/postgresql/server or src/include directory**
 
-# Step 3#
+# Step 3 #
 Executing following command when you completed step 2
 
 cd $PGDATA/../include/postgresql/server/
@@ -18,7 +18,7 @@ gcc -shared -o decode.so decode.o
 
 cp decode.so $PGDATA/../lib/
 
-# Step 4#
+# Step 4 #
 **Download decode.sql file**
 
 put the decode.sql file in /home/postgres directory or other directory
@@ -33,7 +33,3 @@ psql -U postgres -d postgres -f decode.sql
     ------------
      PostgreSQL
     (1 row)
-
-
-
-
